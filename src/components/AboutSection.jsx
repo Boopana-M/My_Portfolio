@@ -7,7 +7,7 @@ function AboutSection({ contact }) {
   return (
     <motion.section 
       id="about" 
-      className="rounded-3xl bg-white/90 p-6 shadow-xl shadow-slate-200/70 ring-1 ring-slate-100"
+      className="rounded-3xl backdrop-blur-xl bg-white/70 dark:bg-slate-900/70 p-8 shadow-2xl shadow-cyan-500/10 border border-white/20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -106,8 +106,8 @@ function AboutSection({ contact }) {
             transition={{ duration: 0.4, delay: 0.7 }}
           >
             <MagneticButton
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-300 transition relative overflow-hidden group"
-              onClick={() => window.location.href = `mailto:${contact.email}`}
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-cyan-500/30 transition relative overflow-hidden group"
+              onClick={() => window.open('/resume.pdf', '_blank')}
             >
               <span className="relative z-10">Resume / Contact</span>
               <motion.div

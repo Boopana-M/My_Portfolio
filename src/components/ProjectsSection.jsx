@@ -36,7 +36,7 @@ function ProjectCard({ project, index }) {
 
   return (
     <motion.article
-      className="group h-full rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100 p-5 shadow-sm relative overflow-hidden"
+      className="group h-full rounded-2xl bg-gradient-to-br from-white to-cyan-50/30 p-6 shadow-xl shadow-cyan-500/5 border border-cyan-200/50 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

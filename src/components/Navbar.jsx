@@ -46,7 +46,7 @@ function Navbar({ navLinks, contactEmail }) {
           ))}
         </motion.div>
         <motion.a
-          href={`mailto:${contactEmail}`}
+          href="#contact"
           className="hidden rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-orange-200 transition hover:bg-orange-400 md:block"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}

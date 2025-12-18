@@ -7,7 +7,7 @@ function Hero({ heroTraits, contact }) {
     <header id="home" className="relative mx-auto grid max-w-6xl gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-2 lg:items-center">
       <div className="space-y-6">
         <motion.div 
-          className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 text-xs font-semibold text-orange-600 shadow-sm shadow-orange-100"
+          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm px-4 py-2 text-xs font-semibold text-cyan-600 border border-cyan-500/20 shadow-lg shadow-cyan-500/10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
@@ -58,7 +58,7 @@ function Hero({ heroTraits, contact }) {
         >
           <motion.a
             href="#about"
-            className="btn-shine rounded-full bg-gradient-to-r from-indigo-500 to-orange-400 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-200 transition"
+            className="btn-shine rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-cyan-500/30 transition hover:shadow-cyan-500/50"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >

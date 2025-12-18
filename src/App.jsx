@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <LoadingScreen />
-      <div className="min-h-screen bg-slate-50 text-slate-900">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50/30 to-purple-50/20 text-slate-900">
         {/* Animated mesh background */}
         <div className="mesh-bg" />
         <AnimatedBackground />
@@ -35,7 +35,7 @@ function App() {
       
       {/* Floating orbs */}
       <motion.div 
-        className="fixed top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl pointer-events-none"
+        className="fixed top-20 left-10 w-96 h-96 bg-cyan-300/15 rounded-full blur-3xl pointer-events-none"
         animate={{
           x: [0, 50, 0],
           y: [0, 30, 0],
@@ -48,7 +48,7 @@ function App() {
         }}
       />
       <motion.div 
-        className="fixed bottom-20 right-10 w-96 h-96 bg-indigo-200/20 rounded-full blur-3xl pointer-events-none"
+        className="fixed bottom-20 right-10 w-[500px] h-[500px] bg-purple-300/15 rounded-full blur-3xl pointer-events-none"
         animate={{
           x: [0, -30, 0],
           y: [0, -50, 0],

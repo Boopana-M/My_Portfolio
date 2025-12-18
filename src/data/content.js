@@ -68,11 +68,8 @@ export const education = [
 export const achievements = [
   '120+ days LeetCode streak • 33 contests',
   '1st place CODELEE (LeetCode) — Sem 2',
-  'Winner in CodeLee Contest — Apr 2025',
   'Runner-up CodeLee Contest — Jan 2025',
-  '3rd place CODELEE (SkillRack) — Sem 1',
   'Winner — Createathon (Dec 2024)',
-  '1st place class-level web design competition',
 ]
 
 export const skills = [
